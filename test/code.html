@@ -15,8 +15,8 @@
 <p>This is a paragraph.</p>
 <p>And this is a <samp>sample code</samp>.</p>
 
-<div class="post-body" style="margin-left: 10px;margin-right:20px;">
-  <pre><code>&lt;!-- Contoh Kode Javascript --&gt;
+<div class="atto-code">
+  <pre><code>// Here is some javascript code
   (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -24,27 +24,28 @@
       js.id = id;
       js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1&appId=xxxxxxxxxxxxx&autoLogAppEvents=1';
       fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</code></pre>
+  }(document, 'script', 'facebook-jssdk'));
+</code></pre>
 <br/>
-<pre><code>&lt;!-- Contoh Kode HTML --&gt;
+<pre><code>&lt;!-- And here is some html --&gt;
 &lt;html&gt;
   &lt;body&gt;
     &lt;head&gt;
-      &lt;title&gt;Syntax Highlighter Pure CSS by Igniel&lt;/title&gt;
+      &lt;title&gt;attoCSS demo&lt;/title&gt;
     &lt;/head&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<br/>  
-<pre><code>&lt;!-- Contoh Kode CSS --&gt;
+<br/>
+<pre><code>/* Work nice with CSS too :) */
 .post-body pre {
-  background-color: #292E34; /* warna background */
-  border-left: 5px solid #008c5f; /* variasi border kiri */
+  background-color: #292E34;
+  border-left: 5px solid #008c5f;
   padding:0; margin:.5em auto; white-space:pre; word-wrap:break-word; overflow:auto; position:relative; width:100%; -moz-tab-size:2; -o-tab-size:2; tab-size:2; word-break:normal; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none
 }
 .post-body pre code {
-  color: #BFBF90; /* warna huruf */
-  font-size: 12px; /* ukuran huruf */ 
+  color: #BFBF90;
+  font-size: 12px;
   max-height:250px; max-height:250px; line-height:1.5em; display:block; background:none; border:none; padding:10px 15px; font-family:'source code pro',menlo,consolas,monaco,monospace; white-space:pre; overflow:auto; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text
 }</code></pre>
 </div>
