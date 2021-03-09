@@ -1,0 +1,25 @@
+html {
+scroll-behavior: smooth;
+}
+body {
+  font-family: Trebuchet MS, sans-serif;
+}
+/* Positioning */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    color: white;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    color: white;
+    text-shadow: none;
+}

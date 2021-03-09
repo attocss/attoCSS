@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>attoCSS Demo</title>
+<link rel="stylesheet" href="../vendor/normalize.css">
+<link rel="stylesheet" href="../../library/code.css">
+<link rel="stylesheet" href="line-counter.css">
+<link rel="stylesheet" href="../../test/test.css">
+</head>
+<body>
+
+<div class="demo">
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<p>And this is a <samp>sample code</samp>.</p>
+
+<div class="post-body" style="margin-left: 10px;margin-right:20px;">
+  <pre><code>&lt;!-- Contoh Kode Javascript --&gt;
+  (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1&appId=xxxxxxxxxxxxx&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</code>
+<code>Druga linija</code>
+</pre>
+<br/>
+<pre><code>&lt;!-- Contoh Kode HTML --&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;head&gt;
+      &lt;title&gt;Syntax Highlighter Pure CSS by Igniel&lt;/title&gt;
+    &lt;/head&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<br/>  
+<pre><code>&lt;!-- Contoh Kode CSS --&gt;
+.post-body pre {
+  background-color: #292E34; /* warna background */
+  border-left: 5px solid #008c5f; /* variasi border kiri */
+  padding:0; margin:.5em auto; white-space:pre; word-wrap:break-word; overflow:auto; position:relative; width:100%; -moz-tab-size:2; -o-tab-size:2; tab-size:2; word-break:normal; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; -webkit-hyphens:none; -moz-hyphens:none; -ms-hyphens:none; hyphens:none
+}
+.post-body pre code {
+  color: #BFBF90; /* warna huruf */
+  font-size: 12px; /* ukuran huruf */ 
+  max-height:250px; max-height:250px; line-height:1.5em; display:block; background:none; border:none; padding:10px 15px; font-family:'source code pro',menlo,consolas,monaco,monospace; white-space:pre; overflow:auto; user-select:text; -webkit-user-select:text; -khtml-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text
+}</code></pre>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>attoCSS modal window example demo</title>
+<link rel="stylesheet" href="../resources/vendor/normalize.css">
+<link rel="stylesheet" href="../library/modal.css">
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<div class="demo">
+<h1>This is a modal window example</h1>
+<p>When you click on link, the window should open.</p>
+
+  <a class="sig" href="#modal_1">Modal 1</a>
+  <a class="sig" href="#modal_2">Modal 2</a>
+
+<!-- Modal container -->
+<div class="modal-container" id="modal_1">
+
+  <!-- Modal  -->
+  <div class="modal">
+    <h3>Modal 1</h3>
+    <p>
+        Ovo je prvi modalni ekran.
+    </p>
+  </div>
+  <!-- Background, click to close -->
+  <a href="#" class="modal-bg"></a>
+</div>
+  
+  <!-- Modal container -->
+    <div class="modal-container" id="modal_2">
+
+      <!-- Modal  -->
+      <div class="modal">
+        <h3>Modal 2</h3>
+        <p>
+        		Ovo je drugi modalni ekran.
+    	  </p>
+      </div>
+      <!-- Background, click to close -->
+      <a href="#" class="modal-bg"></a>
+    </div>
+</div>
+</body>
+</html>

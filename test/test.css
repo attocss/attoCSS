@@ -1,0 +1,13 @@
+/* **********************************************
+ The styling in this file is only for test pages.
+ It is not included in attoCSS framework.
+********************************************** */
+
+.demo {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+body {
+  font-family: Trebuchet MS, sans-serif;
+/*  font-family: Courier New, monospace; */
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>attoCSS Responsive Images Demo</title>
+<link rel="stylesheet" href="../resources/vendor/normalize.css">
+<link rel="stylesheet" href="../library/images.css">
+<link rel="stylesheet" href="../library/lightbox.css">
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<div class="demo">
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<img src="../resources/images/image.jpg" alt="" width="800px">
+
+
+<!-- thumbnail image wrapped in a link -->
+<a href="#img1">
+  <img src="https://picsum.photos/seed/9/500/300">
+</a>
+
+<!-- lightbox container hidden with CSS -->
+<a href="#" class="lightbox" id="img1">
+  <span style="background-image: url('https://picsum.photos/seed/9/900/450')"></span>
+</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>attoCSS input fields Demo</title>
+<link rel="stylesheet" href="../resources/vendor/normalize.css">
+<link rel="stylesheet" href="../library/input-prefixed.css">
+<link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<div class="demo">
+<h1>This is input fields demo</h1>
+<p>This is a paragraph.</p>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input class="input" type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input class="input" type="text" id="lname" name="lname" value="Doe">
+</form>
+
+
+<form>
+  <br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form>
+
+<br>
+
+<!-- Select -->
+<h1>Pure CSS Select</h1>
+<div class="select">
+  <select name="slct" id="slct">
+    <option selected disabled>Choose an option</option>
+    <option value="1">Pure CSS</option>
+    <option value="2">No JS</option>
+    <option value="3">Nice!</option>
+  </select>
+</div>
+
+<br>
+
+<div class="select">
+<select name="slct" id="slct2">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+</div>
+
+<br>
+<br>
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<hr>
+
+button <br>
+  <input type="button" value="Button">
+    <br>
+
+checkbox <br>
+  <input type="checkbox">
+    <br>
+    
+color <br>
+  <input type="color">
+    <br>
+    
+date <br>
+  <input type="date">
+    <br>
+    
+datetime-local <br>
+  <input type="datetime-local">
+    <br>
+
+email <br>
+  <input type="email">
+    <br>
+    
+file <br>
+<div class="fileUpload">
+    <input type="file" class="upload" />
+    <span>Upload</span>
+</div>
+
+<input class="range" type="range" min="0" max="100" value="10" step="1" onmousemove="rangevalue1.value=value" />
+  <output id="rangevalue1"></output>
+  
+  <h6>Disabled</h6>
+  <input class="range" type="range" min="0" max="100" value="10" step="1" onmousemove="rangevalue1.value=value" disabled />
+  
+ <br>
+  <input type="hidden">
+    <br>
+    
+image <br>
+  <input type="image">
+    <br>
+    
+month <br>
+  <input type="month">
+    <br>
+    
+number <br>
+  <input type="number">
+    <br>
+    
+password <br>
+  <input type="password">
+    <br>
+
+<br>
+radio 
+<br><br>
+<div class="radio"> 
+  <input id="first" type="radio" name="numbers" value="first">  
+  <label for="first">First</label>  
+  <input id="second" type="radio" name="numbers" value="second">  
+  <label for="second">Second</label>    
+</div>  
+<br>
+<div class="checkbox">  
+  <input id="check" type="checkbox" name="check" value="check">  
+  <label for="check">First</label>      
+</div>  
+    <br>
+    
+range <br>
+  <input type="range">
+    <br>
+    
+reset <br>
+  <input type="reset">
+    <br>
+  
+search <br>
+  <input type="search">
+    <br>
+    
+submit <br>
+  <input type="submit">
+    <br>
+    
+tel <br>
+  <input type="tel">
+    <br>
+    
+text <br>
+  <input type="text">
+    <br>
+    
+time <br>
+  <input type="time">
+    <br>
+    
+url <br>
+  <input type="url">
+    <br>
+    
+week <br>
+  <input type="week">
+    <br>
+</div>
+
+</body>
+</html>

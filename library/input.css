@@ -1,0 +1,363 @@
+button, input[type="button"], input[type="reset"], input[type="submit"], input[type="month"], input[type="number"], input[type="datetime-local"], input[type="email"], input[type="date"], input[type="submit"] {
+  height: 35px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #eee;
+}
+button.btn-default {
+  background-color: #eee;
+  color: #000000;
+}
+button.btn-default:hover {
+  background-color: #ddd;
+}
+button.btn-default:active {
+  background-color: #ccc;
+}
+input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+}
+
+/* Hover color for buttons */
+input[type=submit]:hover {
+  background-color: #ddd;
+}
+input[type=button]:hover {
+  background-color: #ddd;
+}
+input[type=reset]:hover {
+  background-color: #ddd;
+}
+
+/* Active color for buttons */
+input[type=submit]:active {
+  background-color: #ccc;
+}
+input[type=button]:active {
+  background-color: #ccc;
+}
+input[type=reset]:active {
+  background-color: #ccc;
+}
+
+input[type=checkbox] {
+  color:#ccc;
+}
+
+/* Custom radio buttons */
+input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 14px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  border-radius: 50%;
+}
+input[type="radio"] {
+  display: none !important;
+  *display: inline;
+}
+input[type="radio"]:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #606670;
+}
+/* Custom checkbox */
+input[type="checkbox"] + label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 14px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  border-radius: 5px;
+}
+input[type="checkbox"] {
+  display: none !important;
+  *display: inline;
+}
+input[type="checkbox"]:checked + label:after {
+  content: "✔";
+  font-size: 20px;
+  line-height: 20px;
+  color: #606670;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+/* File Upload */
+.fileUpload {
+	background: #eee;
+	border-radius: 15px;
+	color: #505050;
+	font-size: 1em;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 0.875em;/*14px/16px*/
+	position: relative;
+	text-align: center;
+	width: 120px;
+  cursor: pointer;
+}
+.fileUpload:hover {
+	background: #ddd;
+  cursor: pointer;
+}
+.fileUpload:active {
+  background: #ccc;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 148px;
+    height: 46px;
+  cursor: pointer;
+}
+input[type="file"] {
+  cursor: pointer;
+}
+
+
+
+/* *****************************
+Range Slider
+***************************** */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+input[type="range"][disabled]::-webkit-slider-runnable-track {
+  border: 1px solid #d7dbdd;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+  border: none;
+}
+
+input[type="range"]::-ms-track {
+  color: transparent;
+  border: none;
+  background: none;
+  height: 6px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background-color: #d7dbdd;
+  border-radius: 3px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background-color: #d7dbdd;
+  border-radius: 3px;
+}
+
+input[type="range"]::-ms-tooltip {
+  display: none;
+  /* display and visibility only */
+}
+
+input[type="range"]::-moz-range-thumb {
+  border-radius: 20px;
+  height: 18px;
+  width: 18px;
+  border: none;
+  background: none;
+  background-color: #606670;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  border-radius: 100%;
+  background-color: #606670;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+}
+
+input[type="range"][disabled]::-webkit-slider-thumb {
+  background-color: transparent;
+  border: 1px solid #d7dbdd;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  outline: none;
+}
+
+input[type="range"]::-ms-thumb {
+  border-radius: 100%;
+  background-color: #606670;
+  height: 18px;
+  width: 18px;
+  border: none;
+}
+
+input[type="range"]:active::-ms-thumb {
+  border: none;
+}
+output {
+  border: 1px solid #d7dbdd;
+  color: #333;
+  font-size: 12px;
+  padding: .4em .6em;
+  border-radius: 3px;
+}
+
+/* **********************************************
+
+*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #748194;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #748194;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #748194;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #748194;
+}
+input[type=text], input[type="password"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"] {
+   font-weight: bold;
+   width: 200px;
+   height: 35px;
+   padding: 6px 15px;
+   border-radius: 5px;
+   outline: none;
+   border: none;
+   background: #eee;
+   color: #748194;
+   font-size: 14px;
+}
+
+/* **********************************************
+* Styles for select
+*/
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #eee;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #ddd;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #000;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #ddd;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #333;
+}
+
+.select:hover {
+  color: #ccc;
+}
