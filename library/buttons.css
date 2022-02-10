@@ -7,12 +7,12 @@ button {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
-  background-color: #eee;
+  background-color: var(--button-color, #eee);
   color: #000000;
 }
 button:hover {
-  background-color: #ddd;
+  background-color: var(--button-color-hover, #ddd);
 }
 button:active {
-  background-color: #ccc;
+  background-color: var(--button-color-active, #ccc);
 }

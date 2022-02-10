@@ -1,1 +1,11 @@
 /* attoCSS settings file */
+:root {
+/* Base styles */
+  --selection-background: #b3d4fc;
+  --selection-color: #fff;
+
+/* Buttons */
+  --button-color: #eee;
+  --button-color-hover: #ddd;
+  --button-color-active: #ccc;
+}

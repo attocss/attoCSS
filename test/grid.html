@@ -5,16 +5,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>attoCSS Grid Demo</title>
 <link rel="stylesheet" href="../resources/vendor/normalize.css">
-<link rel="stylesheet" href="../library/base.css">
-<link rel="stylesheet" href="../library/grid.css">
+<link rel="stylesheet" href="../library/02-base.css">
+<link rel="stylesheet" href="../library/03-grid.css">
 <link rel="stylesheet" href="test.css">
+<style>
+div[class^="a-col-"] {
+  background-color: #ccc;
+  color: #474747;
+  border-radius: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 0.5px #8f8f8f solid;
+}
+p {
+  padding-left: 5px;
+}
+</style>
 </head>
 <body>
-
   <div class="demo">
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
   </div>
 
+  <div class="a-container">
+    <div class="a-row">
+      <div class="a-col-1">
+        <p>One</p>
+        <!-- This content will take up 1/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-11">
+        <p>Eleven</p>
+        <!-- This content will take up 11/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-2">
+        <p>Two</p>
+        <!-- This content will take up 2/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-10">
+        <p>Ten</p>
+        <!-- This content will take up 10/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-3">
+        <p>Three</p>
+        <!-- This content will take up 3/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-9">
+        <p>Nine</p>
+        <!-- This content will take up 9/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-4">
+        <p>Four</p>
+        <!-- This content will take up 4/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-8">
+        <p>Eight</p>
+        <!-- This content will take up 8/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-5">
+        <p>Five</p>
+        <!-- This content will take up 5/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-7">
+        <p>Seven</p>
+        <!-- This content will take up 7/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-6">
+        <p>Six</p>
+        <!-- This content will take up 6/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-6">
+        <p>Six</p>
+        <!-- This content will take up 6/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-7">
+        <p>Seven</p>
+        <!-- This content will take up 7/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-5">
+        <p>Five</p>
+        <!-- This content will take up 5/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-8">
+        <p>Eight</p>
+        <!-- This content will take up 8/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-4">
+        <p>Four</p>
+        <!-- This content will take up 4/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-9">
+        <p>Nine</p>
+        <!-- This content will take up 9/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-3">
+        <p>Three</p>
+        <!-- This content will take up 3/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-10">
+        <p>Ten</p>
+        <!-- This content will take up 10/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-2">
+        <p>Two</p>
+        <!-- This content will take up 2/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-11">
+        <p>Eleven</p>
+        <!-- This content will take up 11/12 (or 1/4) of the container -->
+      </div>
+      <div class="a-col-1">
+        <p>One</p>
+        <!-- This content will take up 1/12 (or 1/4) of the container -->
+      </div>
+    </div>
+
+    <div class="a-row">
+      <div class="a-col-12">
+        <p>Tvelve</p>
+        <!-- This content will take up 12/12 (or 1/4) of the container -->
+      </div>
+    </div>
+  </div>
 </body>
 </html>
