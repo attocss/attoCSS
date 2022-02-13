@@ -361,3 +361,13 @@ select {
 .select:hover {
   color: #ccc;
 }
+
+textarea {
+  min-height: 150px;
+  max-height: 400px;
+  min-width: 500px;
+  max-width: 1000px;
+  background-color: #eeeeee;
+  border: 3px #dddddd solid;
+  border-radius: 5px;
+}
