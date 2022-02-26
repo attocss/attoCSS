@@ -5,19 +5,16 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     postcss: {
       options: {
-        //map: true, // inline sourcemaps
-        browsers: ['last 4 version'],
-
-        // or
-        // map: {
-        //     inline: false, // save all sourcemaps as separate files...
-        //     annotation: 'maps/' // ...to the specified directory
-        // },
-
+        map: {
+            // Save source maps to separate files in maps directory
+            inline: false,
+            annotation: 'maps/'
+        },
         processors: [
           require('autoprefixer')()
         ]
       },
+      // Apply autoprefixer on existing libraries
       dist: {
         src: 'library/*.css'
       }
@@ -27,12 +24,14 @@ module.exports = function(grunt) {
         mergeIntoShorthands: false,
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
+      // Main build
       build1: {
-        src: ['library/*.css', 'modules/*.css'],
         // Use this if you want to bundle normalize.css in atto.min.css
-        // src: ['resources/vendor/normalize.css', 'library/*.css'],
+        // src: ['resources/vendor/normalize.css', 'library/*.css', 'modules/*.css'],
+        src: ['library/*.css', 'modules/*.css'],
         dest: 'build/atto.min.css'
       },
+      // Build separate libraries
       build2: {
         expand:true,
         cwd: 'library',
@@ -43,18 +42,24 @@ module.exports = function(grunt) {
     },
     concat_css: {
       options: {},
+      // Generate atto.css file
       build3: {
-        src: ['library/*.css', 'modules/*.css'],
         // This will add normalize.css to non-minified atto.css file
-        // src: ['resources/vendor/normalize.css', 'library/*.css'],
+        // src: ['resources/vendor/normalize.css', 'library/*.css', 'modules/*.css'],
+        src: ['library/*.css', 'modules/*.css'],
         dest: "src/atto.css"
+      },
+      // Build source map
+      build4: {
+        src: 'maps/*.map',
+        dest: "src/atto.css.map"
       }
-    }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('@lodder/grunt-postcss');
   grunt.registerTask('default', ['postcss', 'cssmin', 'concat_css']);
-  grunt.registerTask('build', [ 'cssmin:build1', 'cssmin:build2', 'concat_css:build3']);
+  grunt.registerTask('build', [ 'cssmin:build1', 'cssmin:build2', 'concat_css:build3', 'concat_css:build4']);
 };
