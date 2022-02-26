@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build1: {
-        src: 'library/*.css',
+        src: ['library/*.css', 'modules/*.css'],
         // Use this if you want to bundle normalize.css in atto.min.css
         // src: ['resources/vendor/normalize.css', 'library/*.css'],
         dest: 'build/atto.min.css'
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
     concat_css: {
       options: {},
       build3: {
-        src: ["library/*.css"],
-        // This will add normalize.css to non-minified atto.css file 
+        src: ['library/*.css', 'modules/*.css'],
+        // This will add normalize.css to non-minified atto.css file
         // src: ['resources/vendor/normalize.css', 'library/*.css'],
         dest: "src/atto.css"
       }
