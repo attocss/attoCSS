@@ -3,6 +3,25 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    postcss: {
+      options: {
+        //map: true, // inline sourcemaps
+        browsers: ['last 4 version'],
+
+        // or
+        // map: {
+        //     inline: false, // save all sourcemaps as separate files...
+        //     annotation: 'maps/' // ...to the specified directory
+        // },
+
+        processors: [
+          require('autoprefixer')()
+        ]
+      },
+      dist: {
+        src: 'library/*.css'
+      }
+    },
     cssmin: {
       options: {
         mergeIntoShorthands: false,
@@ -35,6 +54,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-concat-css');
-  grunt.registerTask('default', ['cssmin', 'concat_css']);
-  grunt.registerTask('build', ['cssmin:build1', 'cssmin:build2', 'concat_css:build3']);
+  grunt.loadNpmTasks('@lodder/grunt-postcss');
+  grunt.registerTask('default', ['postcss', 'cssmin', 'concat_css']);
+  grunt.registerTask('build', [ 'cssmin:build1', 'cssmin:build2', 'concat_css:build3']);
 };

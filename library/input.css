@@ -310,10 +310,10 @@ input[type=text], input[type="password"], input[type="search"], input[type="tel"
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none;
   appearance: none;
   outline: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0 !important;
   background: #eee;
   background-image: none;
@@ -325,6 +325,8 @@ select::-ms-expand {
 /* Custom Select */
 .select {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 20em;
   height: 3em;
@@ -334,7 +336,9 @@ select::-ms-expand {
   border-radius: .25em;
 }
 select {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   padding: 0 .5em;
   color: #000;
   cursor: pointer;

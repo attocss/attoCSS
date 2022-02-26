@@ -9,6 +9,8 @@ https://dev.to/mandrewdarts/
 [id*="modal_"] {
 visibility: hidden;
 opacity: 0;
+-webkit-transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+-o-transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -21,14 +23,22 @@ opacity: 1;
 /* Greeting Modal */
 [id*="modal_"] .modal {
 opacity: 0;
-transform: translateY(-1rem);
+-webkit-transform: translateY(-1rem);
+        -ms-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+-webkit-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+-o-transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-transition-delay: .2s;
+-webkit-transition-delay: .2s;
+     -o-transition-delay: .2s;
+        transition-delay: .2s;
 }
 
 /* Greeting Modal - when open */
 [id*="modal_"]:target .modal {
-transform: translateY(0);
+-webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+    transform: translateY(0);
 opacity: 1;
 }
 
@@ -39,9 +49,15 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
-align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 /* Modal Background Styles */

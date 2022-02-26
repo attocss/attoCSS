@@ -7,7 +7,18 @@
   overflow:auto;
   position:relative;
   width:100%;
-  -moz-tab-size:2; -o-tab-size:2; tab-size:2; word-break:normal; user-select:text; -webkit-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text; -webkit-hyphens:none; -ms-hyphens:none; hyphens:none
+  -moz-tab-size:2;
+  -o-tab-size:2;
+  tab-size:2;
+  word-break:normal;
+  user-select:text;
+  -webkit-user-select:text;
+  -moz-user-select:text;
+  -ms-user-select:text;
+  user-select:text;
+  -webkit-hyphens:none; 
+  -ms-hyphens:none;
+  hyphens:none
 }
 .atto-code pre code {
   color: #252525;

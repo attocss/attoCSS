@@ -6,6 +6,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
   background-color: var(--button-color, #eee);
   color: #000000;

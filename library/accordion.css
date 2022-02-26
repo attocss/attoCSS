@@ -18,6 +18,8 @@ details {
   overflow: hidden;
   height: 3rem;
   border: 1px solid #ccc;
+  -webkit-transition: height 150ms ease;
+  -o-transition: height 150ms ease;
   transition: height 150ms ease;
   margin-bottom: 1em;
 }
