@@ -1,0 +1,1 @@
+summary{padding:1rem;font-size:1rem;line-height:1;background:#ededed;cursor:pointer}summary:hover{background:#e8e8e8}summary:active{background:#dedede}details{overflow:hidden;height:3rem;border:1px solid #ccc;transition:height 150ms ease;margin-bottom:1em}details[open]{height:8rem}details section{padding:1rem}
