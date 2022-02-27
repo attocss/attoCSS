@@ -1,1 +1,0 @@
-{"version":3,"sources":["../library/images.css"],"names":[],"mappings":";AACA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,WAAW;AACb","file":"../library/images.css","sourcesContent":["\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n.img-full {\n  width: 100%;\n}\n"]}

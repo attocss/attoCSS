@@ -5,11 +5,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     postcss: {
       options: {
-        map: {
-            // Save source maps to separate files in maps directory
-            inline: false,
-            annotation: 'maps/'
-        },
         processors: [
           require('autoprefixer')()
         ]
@@ -48,11 +43,6 @@ module.exports = function(grunt) {
         // src: ['resources/vendor/normalize.css', 'library/*.css', 'modules/*.css'],
         src: ['library/*.css', 'modules/*.css'],
         dest: "src/atto.css"
-      },
-      // Build source map
-      build4: {
-        src: 'maps/*.map',
-        dest: "src/atto.css.map"
       }
     },
   });
@@ -61,5 +51,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('@lodder/grunt-postcss');
   grunt.registerTask('default', ['postcss', 'cssmin', 'concat_css']);
-  grunt.registerTask('build', [ 'cssmin:build1', 'cssmin:build2', 'concat_css:build3', 'concat_css:build4']);
+  grunt.registerTask('build', [ 'cssmin:build1', 'cssmin:build2', 'concat_css:build3']);
 };

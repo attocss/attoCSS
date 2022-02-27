@@ -13,7 +13,6 @@
 
 
 ************************************************************** */
-/*# sourceMappingURL=../maps/01-TOC.css.map */
 html {
 scroll-behavior: smooth;
 }
@@ -39,7 +38,6 @@ body {
     color: white;
     text-shadow: none;
 }
-/*# sourceMappingURL=../maps/02-base.css.map */
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .a-container {
@@ -198,7 +196,6 @@ body {
     max-width: 60rem;
   }
 }
-/*# sourceMappingURL=../maps/03-grid.css.map */
 summary {
   padding: 1rem;
   font-size: 1rem;
@@ -232,7 +229,6 @@ details[open] {
 details section {
   padding: 1rem;
 }
-/*# sourceMappingURL=../maps/accordion.css.map */
 blockquote.a-blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -250,7 +246,6 @@ blockquote.a-blockquote:before {
 blockquote.a-blockquote p {
   display: inline;
 }
-/*# sourceMappingURL=../maps/blockquote.css.map */
 button {
   height: 35px;
   margin: 5px 10px;
@@ -271,7 +266,6 @@ button:hover {
 button:active {
   background-color: var(--button-color-active, #ccc);
 }
-/*# sourceMappingURL=../maps/buttons.css.map */
 .atto-code pre {
   background-color: #F6F8FA;
   border-left: 5px solid #606670;
@@ -315,7 +309,6 @@ samp {
   white-space:pre;
   word-wrap:break-word;
 }
-/*# sourceMappingURL=../maps/code.css.map */
 .a-iframe-container {
   position: relative;
   width: 100%;
@@ -340,7 +333,6 @@ samp {
   height: 100%;
 }
 }
-/*# sourceMappingURL=../maps/embeds.css.map */
 img {
   max-width: 100%;
   height: auto;
@@ -349,7 +341,6 @@ img {
 .img-full {
   width: 100%;
 }
-/*# sourceMappingURL=../maps/images.css.map */
 button, input[type="button"], input[type="reset"], input[type="submit"], input[type="month"], input[type="number"], input[type="datetime-local"], input[type="email"], input[type="date"], input[type="submit"] {
   height: 35px;
   padding: 6px;
@@ -727,8 +718,7 @@ textarea {
   border: 3px #dddddd solid;
   border-radius: 5px;
 }
-/*# sourceMappingURL=../maps/input.css.map */
-/*# sourceMappingURL=../maps/less-common.css.map */
+
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
@@ -766,8 +756,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/*# sourceMappingURL=../maps/lightbox.css.map */
-/*# sourceMappingURL=../maps/lists.css.map */
+
 /* ****************************************
 CSS Only Modal using target
 https://dev.to/mandrewdarts/
@@ -856,7 +845,6 @@ color: black;
 .modal a:hover {
 color: grey;
 }
-/*# sourceMappingURL=../maps/modal.css.map */
 .spinner {
   /* Spinner size and color */
   width: 1.5rem;
@@ -905,7 +893,6 @@ color: grey;
   border-top-color: #09d;
   border-left-color: #09d;
 }
-/*# sourceMappingURL=../maps/spinners.css.map */
 .table-container {
   background-color: #FFF;
   border-radius: 3px;
@@ -995,7 +982,6 @@ td {
     width: 50%;
   }
 }
-/*# sourceMappingURL=../maps/tables.css.map */
 a {
   margin: 50px;
   display: inline-block;
@@ -1086,5 +1072,4 @@ a {
   border: 0.25em dashed transparent;
   border-left: 0.25em solid #222;
 }
-/*# sourceMappingURL=../maps/tooltips.css.map */
 /*! User module */
