@@ -1,8 +1,6 @@
-.grunt
-node_modules/
-*.gz
-*.tgz
-*.zip
-*.URL
-*.lnk
 package-lock.json
+node_modules/
+.DS_Store
+*.zip
+*.tgz
+*.gz
