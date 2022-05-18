@@ -4,6 +4,7 @@ summary {
   line-height: 1;
   background: #ededed;
   cursor: pointer;
+  user-select: none;
 }
 
 summary:hover {
